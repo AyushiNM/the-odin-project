@@ -8,17 +8,19 @@ body {
     justify-content: flex-end;
 }
 
-.nav-item {
+.nav-item{
     margin: 0.5rem;
 }
 
 #app-icon {
-    opacity: 0.5;
-    padding: 0px 0.5rem 0px 0.5rem;
+    opacity: 0.65;
+    border-radius: 50%;
+    padding: 0.25rem;
 }
 
 #avatar {
     border-radius: 50%;
+    padding: 0.25rem;
 }
 
 #nav a {
@@ -52,7 +54,7 @@ body {
 }
 
 #search-icon {
-    opacity: 0.3;
+    opacity: 0.4;
 }
 #text-box {
     background-color: transparent;
@@ -75,15 +77,16 @@ body {
     border: none;
     border-radius: 5px;
     background-color: #f8f9fa;
+    cursor: pointer;
 }
 
 #languages {
     font-family: Arial,sans-serif;
     font-size: 13px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0.8rem 1rem 1rem 1rem;
-    align-items: center;
+    display: inline-block;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 1rem;
 }
 
 #languages a {
@@ -115,7 +118,7 @@ footer {
 }
 
 .left, .right {
-    padding: 0 3rem 0 3rem;
+    padding: 0 4rem 0 4rem;
     display: flex;
     justify-content: space-between;
 }
@@ -130,4 +133,47 @@ footer {
 
 .footer-country {
     padding-bottom: 1rem;
+}
+
+.left :hover, .right :hover, #languages a:hover, #nav a:hover {
+    text-decoration: underline;
+}
+
+#app-icon:hover, #avatar:hover {
+    background-color: #DEE1E6;
+
+}
+
+.buttons:hover {
+    border-color: #f8f9fa;
+    box-shadow: 0 1px 1px rgba(0,0,0,.15);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0
+}
+.buttons:focus {
+    border: 1px solid #4285f4;
+    outline: none;
+}
+
+@media (max-width: 660px) {
+    .footer-links {
+      flex-direction: column;
+    }
+    #search-box{
+      width: 90%;
+    }
+    .left, .right {
+        padding: 0 1.5rem 0.5rem 1.5rem;
+    }
+}
+@media (max-height: 800px) {
+    #main {
+        margin-top: 1rem;
+        overflow:visible;
+        margin-bottom: 5rem;
+    }
+    footer {
+        position: relative;
+        bottom:0;
+    }
 }
