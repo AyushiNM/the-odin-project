@@ -155,6 +155,12 @@ footer {
     outline: none;
 }
 
+#search-box:hover,
+#search-box:focus-within {
+    border-color: white;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
 @media (max-width: 660px) {
     .footer-links {
       flex-direction: column;
