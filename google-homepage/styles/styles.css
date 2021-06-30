@@ -36,7 +36,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 11rem;
+    margin-top: 8rem;
 }
 #logo {
     margin: 1.5rem;
@@ -172,7 +172,7 @@ footer {
         padding: 0 1.5rem 0.5rem 1.5rem;
     }
 }
-@media (max-height: 800px) {
+@media (max-height: 600px) {
     #main {
         margin-top: 1rem;
         overflow:visible;
