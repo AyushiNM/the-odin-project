@@ -172,7 +172,7 @@ footer {
         padding: 0 1.5rem 0.5rem 1.5rem;
     }
 }
-@media (max-height: 600px) {
+@media (max-height: 700px) {
     #main {
         margin-top: 1rem;
         overflow:visible;
